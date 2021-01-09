@@ -158,7 +158,7 @@ void Run(uint8_t *out, uint32_t t_cost, uint32_t m_cost, uint32_t lanes, uint32_
     memset(ad, 4, ad_length);
 
     Argon2_Context context={out, out_length, pwd, pwd_length, salt, salt_length,
-            secret, secret_length, ad, ad_length, t_cost, m_cost, lanes, lanes,
+            secret, secret_length, ad, ad_length, t_cost, m_cost, lanes, threads,
             NULL, NULL,
             clear_password, clear_secret, clear_memory,print};
 
